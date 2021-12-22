@@ -15,7 +15,7 @@ class _MainScreenState extends State<MainScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      extendBodyBehindAppBar: true,
+      extendBodyBehindAppBar: false,
       appBar: AppBar(
         actions: [
           PopupMenuButton<String>(
@@ -63,14 +63,14 @@ class _MainScreenState extends State<MainScreen> {
                 ];
               })
         ],
-        backgroundColor: Colors.transparent,
+        backgroundColor: Colors.teal,
         elevation: 0,
 
         title: Text(
         AppLocalizations.of(context)!.app_name,
-        style: GoogleFonts.cairo(color: Colors.teal),
+        style: GoogleFonts.cairo(color: Colors.white),
         ),
-        iconTheme: IconThemeData(color: Colors.teal),
+        iconTheme: IconThemeData(color: Colors.white),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: (){
